@@ -1,0 +1,23 @@
+{% extends "szablon.html" %}
+
+
+{% block content %}
+	<h2>Dodawanie nowego przepisu</h2>
+	
+	<form method="post" enctype="multipart/form-data">
+		<div>Grafika: <input type="file" name="img"/></div>
+		<div>Nazwa przepisu</div>
+		<div><input type="text" name ="name">{{name}}</textarea></div>
+		</br>
+		<div>Składniki: </div>
+		<div><textarea name ="skladniki">{{skladniki}}</textarea></div>
+		<div class="error">{{error}}</div>
+		</br>
+	
+		<div>Przepis: </div>
+		<div><textarea name ="content">{{content}}</textarea></div>
+		<div class="error">{{error}}</div>
+		</br>
+		<div><input type="submit" value="Dodaj przepis"/></div>
+	</form>
+{% endblock %}
