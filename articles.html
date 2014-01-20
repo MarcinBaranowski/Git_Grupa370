@@ -1,0 +1,16 @@
+{% extends "szablon.html" %}
+
+{% block content %}
+	<h1>Lista przepisów</h1>
+	<form method="post">
+		<textarea name="wyszukaj_filtr" id="wyszukaj_filtr"></textarea>
+		<div id="wyszukaj"><input type="submit" value="Wyszukaj"/></div>
+	</form>
+	<ul>
+		{% for article in articles %}
+		<li><a href="/{{article.key().name()}}">{{article.title}}</a></li>
+		{% endfor %}
+	</ul>
+	<div class="error">{{error}}</div>
+	
+{% endblock %}
