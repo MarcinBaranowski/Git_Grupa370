@@ -1,0 +1,62 @@
+#menu {
+	position: absolute;
+	top: 50px;
+}
+#menu a, #menu a:visited {
+	display: block;
+	float: left;
+	font-size: 25px;
+	padding: 0 10px;
+	text-decoration: underline;
+	color: #d77;
+}
+#menu a:hover {
+	color: #a55;
+}
+h1 {
+	font-size: 32px;
+}
+#content {
+	position: absolute;
+	top: 100px;
+}
+#wyszukaj_filtr {
+	resize:none;
+	width: 200px;
+	height: 16px;
+	position: absolute;
+	top: 37px;
+	left:230px;
+	background-color: #ddd;
+}
+#wyszukaj {
+	height: 20px;
+	position: absolute;
+	top: 37px;
+	left:440px;	
+}
+
+#skladniki, #przepis{
+	position: relative;
+	left: 20px;
+	top: -10px;
+}
+
+ul {
+	list-style-type: circle;
+}
+ul li {
+	line-height: 30px;
+	font-size: 20px;
+}
+ul li a, ul li a:visited {
+	color: black;
+}
+ul li a:hover {
+	color: blue;
+}
+textarea {
+	resize: none;
+	width: 400px;
+	height: 200px;
+}
